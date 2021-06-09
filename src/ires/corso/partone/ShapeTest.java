@@ -25,5 +25,13 @@ public class ShapeTest {
         double aTrap = Trapezio.computeArea(0, 0, 0);
 
         Scanner in = new Scanner(System.in);
+        String input = in.nextLine(); // Ipotesi: utente inserisce "1|2|red|blue|"
+
+        Scanner s = new Scanner(input).useDelimiter("\\|");
+        System.out.println(s.next());
+        System.out.println(s.nextInt());
+        System.out.println(s.next());
+        System.out.println(s.next());
+        s.close();
     }
 }

@@ -17,8 +17,6 @@ public class StringTest {
             System.out.println("manca una stringa");
         else {
             System.out.println("La lunghezza della terza stringa = " + args[2].length());
-            System.out.println("la terza stringa termina con " + args[2].charAt(args[2].length()-1));
-
         }
     }
 }

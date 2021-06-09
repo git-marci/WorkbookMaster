@@ -36,6 +36,30 @@ public class ArrayTest {
     // - se intArray == {1, 2, 3, 4} ==> elemPositionInArray(intArray, 7) == -1
     //
     public static int elemPositionInArray(int[] intArray, int elem) {
-        return 0;
+        int j = 0;
+        int thereIs = -1;
+
+        /* for...
+         * cerco l'elemento, se c'è passo la posizione aggiornando thereIs
+         */
+
+        return thereIs;
+    }
+
+    // Scrivere un metodo java che accetta in ingresso un
+    // array di int e ne costruisce una copia che non
+    // contiene gli eventuali elementi duplicato
+    //
+    // Esempio:
+    // - se intArray == {1, 2, 2, 3, 4} ==> removeDuplicates(intArray) == {1, 2, 3, 4}
+    // - se intArray == {11, 55, 22, 55, 44} ==> removeDuplicates(intArray) == {11, 55, 22, 44}
+    // - se intArray == {1, 2, 3, 4} ==> removeDuplicates(intArray) ==  {1, 2, 3, 4}
+    //
+    // Non c'è un metodo per rimuovere un elemento da un array.
+    // Bisogna costruire un ALTRO array, che non contenga i numeri che
+    // sono duplicati nell'array originale.
+    //
+    public static int[] removeDuplicates(int[] arrayWithDuplicates) {
+        return null;
     }
 }

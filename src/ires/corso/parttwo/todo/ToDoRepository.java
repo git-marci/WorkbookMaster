@@ -53,6 +53,6 @@ public class ToDoRepository implements Serializable
     }
 
     public void writeToFile(String fileName) {
-
+        // serializzazione su file con writeObject: cfr. hints/InputOutput
     }
 }

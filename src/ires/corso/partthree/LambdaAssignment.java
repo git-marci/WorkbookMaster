@@ -16,5 +16,5 @@ public class LambdaAssignment
     //    - li trasforma in stream
     //    - filtra i duplicati (HINT: guardate bene i metodi dell'interfaccia Stream...)
     //    - eleva al quadrato i numeri filtrati
-    //    - calcola la media (HINT: operazione terminale chiamata "average")
+    //    - calcola la media (HINT: operazione terminale chiamata "average": https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/IntStream.html#average())
 }

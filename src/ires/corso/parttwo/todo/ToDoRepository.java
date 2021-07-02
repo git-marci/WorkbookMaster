@@ -18,11 +18,16 @@ public class ToDoRepository implements Serializable
     public static ToDoRepository loadFromFile(String fileName) {
         // Individua il file e lo deserializza con readObject
         // _repository = ...
+        ToDoRepository ttt = new ToDoRepository();
         return _repository;
     }
 
+    // Costruttore privato: non è possibile generare ToDoRepository con "new" dall'esterno
+    private ToDoRepository() {}
+
     // Restituisce sempre la stessa istanza (quella serializzata/deserializzata da file)
     public static ToDoRepository getToDoRepository() {
+        if(_repository == null) _repository = new ToDoRepository();
         return _repository;
     }
 
@@ -35,9 +40,6 @@ public class ToDoRepository implements Serializable
     //   usare per le visualizzazioni di ToDoList
     Map<Long, ToDo> _data = new HashMap<>();    // Mappa ID -> TO-DO
     private long _idSeed;                       // Contatore per la generazione degli id
-
-    // Costruttore privato: non è possibile generare ToDoRepository con "new" dall'esterno
-    private ToDoRepository() {}
 
     // Utilizzato per generare un nuovo ID
     public long getNewId() {

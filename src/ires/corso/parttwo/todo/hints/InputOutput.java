@@ -16,6 +16,8 @@ public class InputOutput
             FileOutputStream file = new FileOutputStream(filename);
             ObjectOutputStream out = new ObjectOutputStream(file);
 
+            ObjectOutputStream out2 = new ObjectOutputStream(new FileOutputStream(filename));
+
             // Method for serialization of object
             out.writeObject(object);
 
